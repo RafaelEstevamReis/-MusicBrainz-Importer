@@ -4,8 +4,8 @@ namespace Importer.Models
 {
     public class Artist
     {
-        public int C1 { get; set; }
-        public Guid Id { get; set; }
+        public int Id { get; set; }
+        public Guid UID { get; set; }
         public string Nome { get; set; }
         public string SortName { get; set; }
         public int StartYear { get; set; }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Importer
 {
@@ -10,10 +11,19 @@ namespace Importer
 
             FileReader fr = new FileReader(@"C:\sblevers\mbdump\artist");
 
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+
+            int i = 0;
             foreach (var item in fr.Get<Models.Artist>())
             {
-                Console.WriteLine(item.Nome);
+                i++;
+                //Console.WriteLine(item.Nome);
             }
+
+            sw.Stop();
+            Console.WriteLine($"End: Items: {i} Time: {sw.Elapsed}");
+
         }
     }
 }
