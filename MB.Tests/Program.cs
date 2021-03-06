@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
+using System.Text;
 using MB.Lib;
 
-namespace MB.Importer
+namespace MB.Tests
 {
     class Program
     {
@@ -16,12 +18,14 @@ namespace MB.Importer
             sw.Start();
 
             int i = 0;
+            using var fs = File.OpenWrite("artistsSort.txt");
+            using var swr = new StreamWriter(fs, Encoding.UTF8);
             foreach (var item in fr.Get<Lib.Models.Artist>())
             {
                 i++;
-                //Console.WriteLine(item.Nome);
+                swr.WriteLine($"{item.SortName}");
             }
-
+            swr.Flush();
             sw.Stop();
             Console.WriteLine($"End: Items: {i} Time: {sw.Elapsed}");
 

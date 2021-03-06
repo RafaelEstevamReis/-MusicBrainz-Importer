@@ -6,7 +6,7 @@ namespace MB.Lib.Models
     {
         public int Id { get; set; }
         public Guid UID { get; set; }
-        public string Nome { get; set; }
+        public string Name { get; set; }
         public string SortName { get; set; }
         public int StartYear { get; set; }
         public int StartMonth { get; set; }
