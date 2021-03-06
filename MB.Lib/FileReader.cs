@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Importer
+namespace MB.Lib
 {
     public class FileReader
     {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
+using MB.Lib;
 
-namespace Importer
+namespace MB.Importer
 {
     class Program
     {
@@ -9,13 +10,13 @@ namespace Importer
         {
             Console.WriteLine("Hello World!");
 
-            FileReader fr = new FileReader(@"C:\sblevers\mbdump\artist");
+            FileReader fr = new FileReader(@"\mbdump\artist");
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
             int i = 0;
-            foreach (var item in fr.Get<Models.Artist>())
+            foreach (var item in fr.Get<Lib.Models.Artist>())
             {
                 i++;
                 //Console.WriteLine(item.Nome);

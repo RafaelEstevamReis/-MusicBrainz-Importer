@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Importer.Models
+namespace MB.Lib.Models
 {
     public class ArtistAlias
     {
