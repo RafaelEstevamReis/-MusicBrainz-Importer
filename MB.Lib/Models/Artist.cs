@@ -14,14 +14,14 @@ namespace MB.Lib.Models
         public int EndYear { get; set; }
         public int EndMonth { get; set; }
         public int EndDay { get; set; }
-        public string C11 { get; set; }
-        public string C12 { get; set; }
-        public string C13 { get; set; }
+        public int C11 { get; set; }
+        public int C12 { get; set; }
+        public int C13 { get; set; }
         public string Disambiguation { get; set; }
-        public string C15 { get; set; }
+        public int C15 { get; set; }
         public DateTime C16 { get; set; }
         public bool C17 { get; set; }
-        public string C18 { get; set; }
-        public string C19 { get; set; }
+        public int C18 { get; set; }
+        public int C19 { get; set; }
     }
 }
