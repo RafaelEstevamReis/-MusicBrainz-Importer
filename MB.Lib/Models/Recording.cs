@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MB.Lib.Models
 {
@@ -17,13 +15,13 @@ namespace MB.Lib.Models
         // Sample: 260000
         public int Length { get; set; }
         // Sample: 
-        public int Disambiguation { get; set; }
+        public string Disambiguation { get; set; }
         // Sample: 0
         public int C07 { get; set; }
         // Sample: 2017-05-15 20:36:38.082509+00
-        public DateTime C08 { get; set; }
+        public DateTime LastUpdate { get; set; }
         // Sample: f
-        public bool C09 { get; set; }
+        public bool Video { get; set; }
     }
 
 }
