@@ -27,7 +27,7 @@ namespace MB.Lib.Models
         // Sample: 0
         public int C10 { get; set; }
         // Sample: 2021-02-21 12:19:56.629604+00
-        public DateTime C11 { get; set; }
+        public DateTime LastUpdated { get; set; }
         // Sample: f
         public bool C12 { get; set; }
     }
