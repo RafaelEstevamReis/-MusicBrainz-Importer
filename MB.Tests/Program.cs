@@ -14,11 +14,12 @@ namespace MB.Tests
         {
             Console.WriteLine("Hello World!");
 
-            var extractor = new ModelExtractor(@"N:\MusicBrainz Database\mbdump\artist");
-            var model = extractor.BuildModel();
+            //var extractor = new ModelExtractor(@"N:\MusicBrainz Database\mbdump\artist");
+            //var model = extractor.BuildModel();
 
+            string path = @"N:\MusicBrainz Database\mbdump\artist\";
 
-            FileReader fr = new FileReader(@"N:\MusicBrainz Database\mbdump\artist");
+            FileReader fr = new FileReader($"{path}\\artist");
 
             Stopwatch sw = new Stopwatch();
             sw.Start();
